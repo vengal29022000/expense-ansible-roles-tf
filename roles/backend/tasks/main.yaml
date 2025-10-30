@@ -45,7 +45,7 @@
 
 - name: Create MySQL database
   community.mysql.mysql_db:
-    name: my_database
+    name: transactions
     state: present
     login_user: root
     login_password: ExpenseApp@1
