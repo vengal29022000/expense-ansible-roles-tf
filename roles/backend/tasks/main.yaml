@@ -43,6 +43,15 @@
   - cryptography
   - PyMySQL
 
+- name: Create MySQL database
+  community.mysql.mysql_db:
+    name: my_database
+    state: present
+    login_user: root
+    login_password: ExpenseApp@1
+    login_host: localhost
+
+
 - name: import mysql data
   community.mysql.mysql_db:
     state: import
